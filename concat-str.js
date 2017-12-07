@@ -9,6 +9,9 @@
 
 // Your code :
 
+const ch3 = 'yolo'
+const ch4 = 'swag'
+const concatStr = (chaine3, chaine4) => ch3 + ch4
 //* Begin of tests
 const assert = require('assert')
 

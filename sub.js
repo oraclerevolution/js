@@ -8,7 +8,9 @@
  */
 
 // Your code :
+const sub = (nb1, nb2) => nb1 - nb2
 
+console.log(sub(2, 2))
 //* Begin of tests
 const assert = require('assert')
 const rand = Math.random()

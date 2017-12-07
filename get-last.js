@@ -9,7 +9,7 @@
  */
 
 // Your code :
-
+const getLast = tableau => tableau[tableau.length - 1]
 //* Begin of tests
 const assert = require('assert')
 

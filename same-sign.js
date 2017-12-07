@@ -9,7 +9,13 @@
  */
 
 // Your code :
+const sameSign = (nbre1, nbre2) => {
+  if (nbre1 === nbre2) {
+    return true
+  }
 
+  return false
+}
 //* Begin of tests
 const assert = require('assert')
 

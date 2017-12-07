@@ -9,7 +9,7 @@
  */
 
 // Your code :
-
+const getLength = chaine => chaine.length
 //* Begin of tests
 const assert = require('assert')
 

@@ -11,7 +11,9 @@
  */
 
 // Your code :
+const max = (a, b) => (a > b ? a : b)
 
+console.log(max(15, 20))
 //* Begin of tests
 const assert = require('assert')
 

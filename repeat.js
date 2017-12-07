@@ -8,7 +8,9 @@
  *
  * @next sentence
  */
+const repeat = (chaine, nombreDeFois) => chaine.repeat(3)
 
+console.log(repeat('assia', 3))
 //* Begin of tests
 const assert = require('assert')
 

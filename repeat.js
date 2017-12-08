@@ -8,9 +8,23 @@
  *
  * @next sentence
  */
-const repeat = (chaine, nombreDeFois) => chaine.repeat(3)
+const repeat = (chaine, nombreDeFois) => {
+  let result = ''
+  let compteur = 1
 
-console.log(repeat('assia', 3))
+  while (compteur <= nombreDeFois) {
+    result = chaine + result
+    compteur++
+  }
+
+  return result
+}
+
+console.log(repeat('a', 3))
+console.log(repeat('ba', 10))
+console.log(repeat('pouet', 2))
+console.log(repeat('haha', 1))
+console.log(repeat('hehehe', 0))
 //* Begin of tests
 const assert = require('assert')
 
@@ -22,4 +36,4 @@ assert.strictEqual(repeat('ba', 10), 'babababababababababa')
 assert.strictEqual(repeat('pouet', 2), 'pouetpouet')
 assert.strictEqual(repeat('haha', 1), 'haha')
 assert.strictEqual(repeat('hehehe', 0), '')
-// End of tests */
+// End of tests  */

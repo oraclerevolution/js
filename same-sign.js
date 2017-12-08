@@ -10,12 +10,21 @@
 
 // Your code :
 const sameSign = (nbre1, nbre2) => {
-  if (nbre1 === nbre2) {
+  if (nbre1 > 0 && nbre2 > 0) {
+    return true
+  } else if (nbre1 < 0 && nbre2 < 0) {
+    return true
+  } else if (nbre1 == 0 && nbre2 == 0) {
     return true
   }
 
   return false
 }
+
+console.log(sameSign(-2, -1))
+console.log(sameSign(0, 0))
+console.log(sameSign(12, 3232))
+console.log(sameSign((-231, 1)))
 //* Begin of tests
 const assert = require('assert')
 

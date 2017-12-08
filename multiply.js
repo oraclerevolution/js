@@ -10,25 +10,25 @@
  */
 
 // Your code :
-//const multiply = (a, b) => {
-//  const resultat = 0
-//  let compteur = 0
+// const multiply = (nb1, nb2) => {
+//   let result = 0
+//   let count = 0
 
-//  while (compteur != b) {
-//    resultat = resultat + a
-//    compteur++
-//  }
-//}
+//   while (count != Math.abs(nb1)) {
+//     result = result + Math.abs(nb2)
+//     count++
+//   }
+
+//   return result
+// }
 const multiply = (nb1, nb2) => {
   let result = 0
   let count = 0
 
-  while (count != Math.abs(nb1)) {
+  while (count <= Math.abs(nb1)) {
     result = result + Math.abs(nb2)
     count++
   }
-
-  return result
 }
 
 //* Begin of tests

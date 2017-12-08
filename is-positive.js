@@ -6,9 +6,15 @@
  *
  * @next sign
  */
+const isPositive = nombre => {
+  if (nombre > 0) {
+    return true
+  }
 
+  return false
+}
 
-
+console.log(isPositive(0))
 //* Begin of tests
 const assert = require('assert')
 

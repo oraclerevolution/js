@@ -6,7 +6,12 @@
  *
  * @next words
  */
-
+const sentence = arrayOfString => {
+    let result = arrayOfString.join(' ')
+    return result
+    }
+console.log(sentence(['a', 'b', 'c']))
+console.log('By OracleRecursion')
 
 //* Begin of tests
 const assert = require('assert')

@@ -6,12 +6,10 @@
  *
  * @next total
  */
-const words = string =>{
-    let result
-    result = string.toString()
-    return result
-}
+const words = string => string.split(' ')
+
 console.log(words('a b c'))
+console.log(words('wol.lol lo,lol'))
 //* Begin of tests
 const assert = require('assert')
 

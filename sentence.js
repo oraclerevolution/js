@@ -6,11 +6,9 @@
  *
  * @next words
  */
-const sentence = arrayOfString => {
-    let result = arrayOfString.join(' ')
-    return result
-    }
-console.log(sentence(['a', 'b', 'c']))
+const sentence = arrayOfString => arrayOfString.join(' ')
+
+console.log(sentence([ 'a', 'b', 'c' ]))
 console.log('By OracleRecursion')
 
 //* Begin of tests
@@ -21,5 +19,5 @@ assert.strictEqual(sentence.length, 1)
 assert.deepStrictEqual(sentence([ 'a', 'b', 'c' ]), 'a b c')
 assert.deepStrictEqual(sentence([ 'a', '1', 'c' ]), 'a 1 c')
 assert.deepStrictEqual(sentence([ 'a', '1', 'c', 'd', 'e', 'f' ]), 'a 1 c d e f')
-assert.deepStrictEqual(sentence([ 'wol.lol', 'lo,lol']), 'wol.lol lo,lol')
+assert.deepStrictEqual(sentence([ 'wol.lol', 'lo,lol' ]), 'wol.lol lo,lol')
 // End of tests */

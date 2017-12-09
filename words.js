@@ -6,6 +6,12 @@
  *
  * @next total
  */
+const words = string =>{
+    let result
+    result = string.toString()
+    return result
+}
+console.log(words('a b c'))
 //* Begin of tests
 const assert = require('assert')
 

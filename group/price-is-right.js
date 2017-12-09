@@ -16,34 +16,44 @@ const getCostCount = numberOfCans => {
   let calcul
 
   if (numberOfCans === 3) {
-    calcul = '1000 francs'
+    calcul = 1500
   } else {
     calcul = numberOfCans * 650
   }
 
-  return calcul + ' francs'
+  return calcul
 }
 
-console.log(getCostCount(5))
-console.log(getCostCount(3))
+console.log(getCostCount(6))
+console.log(getCostCount(10))
 
 const getCostMl = quantity => {
   let result
 
   if (quantity === 1500) {
-    result = '1000'
+    result = 1500
   } else if (quantity != 1500) {
     const division = quantity / 500
 
     result = division * 650
   }
 
-  return result + ' francs'
+  return result
 }
 
-console.log(getCostMl(1500))
+console.log(getCostMl(33))
 console.log(getCostMl(500))
 console.log(getCostMl(2000))
 // You must write your own tests
+//nos tests
+const assert = require('assert')
+//les tests de la premiere fonction
 
+assert.strictEqual(typeof getCostCount, 'function')
+assert.strictEqual(getCostCount.length, 1)
+assert.strictEqual(getCostCount(3), 1500)
+assert.strictEqual(getCostCount(0), 0)
+assert.strictEqual(getCostCount(!0), false)
+
+//les tests de la deuxieme fonction
 throw Error('No tests !')

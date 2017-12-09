@@ -10,13 +10,21 @@
  *
  * Français:
  * Créer la fonction `FizzBuzz` qui affiche les nombres de 1 à 100
- * Mais pour les multiples de trois, affiche "Fizz" à la place du nombre
+ * Mais pour les multiples de trois, affiche "Fizz" à a place du nombre
  * et pour les multiples de cinq, affiche "Buzz".
  * Pour les nombres qui sont des multiples de trois et de cinq, affiche "FizzBuzz".
  *
- * Utilisez console.log pour afficher.
+ * Utilisez console.log pour afficher.l
  */
 
-
+for (let i = 1; i <= 100; i++) {
+  if (i % 15 == 0) {
+    console.log('fizzBuzz')
+  } else if (i % 3 == 0) {
+    console.log('Fizz')
+  } else {
+    console.log(i)
+  }
+}
 // You must write your own tests
 throw Error('No tests !')

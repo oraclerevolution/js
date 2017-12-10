@@ -8,7 +8,13 @@
  *
  * @next keep
  */
-
+const cutFirst = string1 => string1.substr(2, string1.length)
+const cutLast = string2 => string2.substr(0, string2.length - 2)
+const cutFistLast = string => 
+console.log(cutFirst('BONJOUR'))
+console.log(cutFirst('oracle'))
+console.log(cutLast('ORACLE'))
+console.log(cutFistLast('ORACLE'))
 // You must write your own tests
 throw Error('No tests !')
 

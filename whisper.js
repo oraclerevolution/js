@@ -6,6 +6,8 @@
  *
  * @next yell
  */
-
+const whisper = string => string.toLowerCase()
 // You must write your own tests
+
+const assert = require('assert')
 throw Error('No tests !')
